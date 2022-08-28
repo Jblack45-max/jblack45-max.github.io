@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2c2c2c;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  display: flex;
+
+}
+
+#totals {
+  width: 50%;
+  color: #fff;
+  padding: 0 20px 20px 20px;
+  margin: 50px 10px 50px 0;
+}
+
+#form {
+  width: 50%;
+  background-color: #fff;
+  padding: 25px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+  margin: 50px 50px 50px 10px;
+}
+
+.formHeader {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 0 0 0;
+  border: 2px solid #2EE59D;
+  padding: 2px;
+  border-radius: 15px;
+}
+
+.headingsWrap {
+  display: flex;
+  margin: auto 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.questionMark {
+  margin: 0;
+  margin: auto 10px;
+  padding: 1px 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+  color: #2c2c2c;
+}
+
+.questionMark:hover {
+  background-color: #2EE59D;
+  color: #fff;
+}
+
+/* Style for submit and reset button */
+.wrap {
+  margin: 30px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.button {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#otherInput,
+#otherList,
+#otherInput2,
+#otherList2,
+#otherInput3,
+#otherList3,
+#otherInput4,
+#otherList4,
+#otherInput5,
+#otherList5,
+#heatListNum,
+#heatInput1,
+#heatList1,
+#heatInput2,
+#heatList2 {
+  margin: 5px;
+}
+
+select {
+  height: 25px;
+  width: 250px;
+  padding: 0;
+  margin: 0;
+  border-radius: 12px;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 0;
+}
+
+input {
+  height: 25px;
+  width: 250px;
+  padding: 0;
+  margin: 0;
+  border-radius: 12px;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+  border: 0;
+  text-align: center;
+}
+
+/* Give spacing for Number of breakers in heat section */
+.heat {
+  margin: 0 0 10px 0;
+}
+
+#heatListNum {
+  width: 180px;
+  margin-left: 20px;
+}
+
+/* General section style - make it so all 3 will be side by side */
+#input01,
+#input02,
+#input03 {
+  width: 170px;
+}
+
+.triangle {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 500px solid #fff;
+  border-left: 800px solid transparent;
+  z-index: -5;
+}
+
+.totalsBottom {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 80px 0;
+  width: 400px;
+}
+
+#solarAllowed,
+#ampsUsed,
+#ampsAvailable {
+  padding: 10px 0;
+  width: 250px;
+  background-color: #2EE59D;
+  text-align: center;
+  margin: 30px auto 5px auto;
+  border-radius: 20px;
+}
+
+.rotatedText {
+  transform: rotate(-90deg);
+  font-size: 60px;
+  margin: 0;
+  letter-spacing: 10px;
+}
+
+.rotatedText h1 {
+  margin: 90px 0 0 0;
+
+}
+
+.blankSpace {
+  width: 80px;
+}
+
+.numbers h3 {
+  margin: 0;
+  text-align: center;
+}
+
+footer {
+  margin: 0 0 0 20px;
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  color: #2EE59D;
+
+}
