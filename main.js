@@ -2,6 +2,7 @@ document.getElementById("solarAllowed").innerHTML = 0;
 document.getElementById("ampsUsed").innerHTML = 0;
 document.getElementById("ampsAvailable").innerHTML = 0;
 
+
 //Declaring Variables here so I can use them outside of function//
 let acBreaker01;
 let smallTotal01;
