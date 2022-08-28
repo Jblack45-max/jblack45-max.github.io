@@ -24,8 +24,6 @@ let percent;
 let max_val;
 const heatAcArray = [0];
 
-
-
 function submitClicked() {
 
 
