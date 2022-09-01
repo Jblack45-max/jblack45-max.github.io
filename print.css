@@ -1,0 +1,31 @@
+.printHeading h2 {
+  text-align: center;
+  margin: 0;
+  s
+}
+
+.printHeading {
+  padding: 15px;
+}
+
+p {
+  text-align: left;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+h3 {
+  text-align: left;
+  font-size: 17px;
+  margin-left: 30px;
+}
+
+h4 {
+  text-align: left;
+  font-size: 15px;
+  margin-left: 30px;
+}
+
+#printBtn {
+  margin: 0 0 5px 30px;
+}

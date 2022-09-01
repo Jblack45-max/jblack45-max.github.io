@@ -3,38 +3,255 @@ body {
   padding: 0;
   background-color: #2c2c2c;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
 }
 
 #wrapper {
   display: flex;
-
 }
 
-#totals {
+.heading {
+  position: fixed;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  padding-left: 20px;
+  background-color: #2c2c2c;
+}
+
+.headingWrap {
+  background-color: #fff;
+  width: 0%;
+}
+
+/* LEFT SIDE HEADING AND MAIN BUTTONS */
+.formHeader {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 0 0 0;
+  border: 2px solid #2EE59D;
+  padding: 0px;
+  border-radius: 15px;
+  background-color: #2c2c2c;
+}
+
+.helpBtn {
+  text-align: center;
+  padding: 20px;
+}
+
+.helpBtn a {
+  text-decoration: none;
+  color: white;
+}
+
+/* TOTALS SECTION */
+
+#leftSide {
   width: 50%;
   color: #fff;
   padding: 0 20px 20px 20px;
   margin: 50px 10px 50px 0;
+  display: flex;
+  flex-direction: column;
 }
+
+#solarAllowed,
+#ampsUsed,
+#ampsAvailable {
+  padding: 7px 0;
+  width: 200px;
+  background-color: #2EE59D;
+  text-align: center;
+  margin: 20px auto 5px auto;
+  border-radius: 20px;
+  font-family: 'Bebas Neue', cursive;
+  color: #2c2c2c;
+}
+
+.numbers h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+.totalsHeaders {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 3em;
+}
+
+.totalsHeaders h1 {
+  margin: 20px 10px 10px 10px;
+  letter-spacing: 15px;
+}
+
+
+#leftTotals {
+  background-color: none;
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin-top: 150px;
+}
+
+
+/* HELP SECTION - Selectors that will make section appear and disappear */
+#leftHelp {
+  background-color: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin-top: 150px;
+}
+
+#leftGeneral {
+  display: none;
+}
+
+#leftBreakers {
+  display: block;
+}
+
+.leftLoads {
+  display: block;
+}
+
+/* NAVBAR for Help  */
+
+.mspPhoto {
+  height: 160px;
+  width: 100px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-image: url(Images/msp.jpg);
+  background-position: center;
+  background-size: 150px;
+}
+
+.mspPhoto:hover {
+  transform: scale(1.1);
+}
+
+.helpInfo {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.helpInfo span {
+  color: #2EE59D;
+  font-weight: 600;
+}
+
+/* HELP SECTION - BREAKERS*/
+
+.breakerImgs div div {
+  height: 6em;
+  width: 6em;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.breakerImgs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.breakerText h5 {
+  text-align: center;
+}
+
+.breakerText div:hover {
+  transform: scale(1.1);
+}
+
+.singlePole {
+  background-image: url(Images/singlePole.jpg);
+  background-position: center;
+  background-size: 90px;
+}
+
+.doublePole {
+  background-image: url(Images/doublePole.jpg);
+  background-position: center;
+  background-size: 90px;
+}
+
+.quad {
+  background-image: url(Images/quad.jpg);
+  background-position: center;
+  background-size: 90px;
+}
+
+.tandem {
+  background-image: url(Images/twin.jpg);
+  background-position: center;
+  background-size: 90px;
+}
+
+/* HELP SECTION - LOADS */
+
+.loadsImgs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.breakerText1 h5 {
+  text-align: center;
+}
+
+.breakerText1 div:hover {
+  transform: scale(1.1);
+}
+
+.singlePole1 {
+  background-image: url(Images/singlePole.jpg);
+  background-position: center;
+  background-size: 90px;
+  height: 6em;
+  width: 6em;
+  border-radius: 50%;
+}
+
+.doublePole1 {
+  background-image: url(Images/doublePole.jpg);
+  background-position: center;
+  background-size: 90px;
+  height: 6em;
+  width: 6em;
+  border-radius: 50%;
+}
+
+.specialLoad {
+  background-image: url(Images/special.jpg);
+  background-position: center;
+  background-size: 90px;
+  height: 6em;
+  width: 6em;
+  border-radius: 50%;
+}
+
 
 
 #form {
   width: 50%;
+  height: fit-content;
   background-color: #fff;
   padding: 25px;
   text-align: center;
   border-radius: 15px;
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
   margin: 50px 50px 50px 10px;
-}
-
-.formHeader {
-  text-align: center;
-  font-size: 30px;
-  margin: 0 0 0 0;
-  border: 2px solid #2EE59D;
-  padding: 2px;
-  border-radius: 15px;
+  position: sticky;
+  top: -200px;
 }
 
 .headingsWrap {
@@ -160,45 +377,6 @@ input {
   z-index: -5;
 }
 
-.totalsBottom {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 80px 0;
-  width: 400px;
-}
-
-#solarAllowed,
-#ampsUsed,
-#ampsAvailable {
-  padding: 10px 0;
-  width: 250px;
-  background-color: #2EE59D;
-  text-align: center;
-  margin: 30px auto 5px auto;
-  border-radius: 20px;
-}
-
-.rotatedText {
-  transform: rotate(-90deg);
-  font-size: 60px;
-  margin: 0;
-  letter-spacing: 10px;
-}
-
-.rotatedText h1 {
-  margin: 90px 0 0 0;
-
-}
-
-.blankSpace {
-  width: 80px;
-}
-
-.numbers h3 {
-  margin: 0;
-  text-align: center;
-}
-
 footer {
   margin: 0 0 0 20px;
   color: #fff;
@@ -211,5 +389,4 @@ footer a {
 
 footer a:hover {
   color: #2EE59D;
-
 }

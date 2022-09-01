@@ -188,7 +188,4 @@ function submitClicked() {
 
     document.getElementById("ampsUsed").innerHTML = Math.round(finalTotal) + "A";
     document.getElementById("ampsAvailable").innerHTML = ampA + "A";
-
-
-
 }

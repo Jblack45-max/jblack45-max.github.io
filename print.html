@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Load Calculations</title>
+  <link rel="stylesheet" href="print.css">
+</head>
+
+<body>
+  <div class="testing">
+    <div class="printHeading">
+      <h2>NEC LOADS - OPTIONAL CALCULATION</h2>
+    </div>
+    <div class="print1">
+      <h4>1. HEATING or AC: 220.82(C)(1-6)</h4>
+      <p>Heating Units (3 or less) = <span id="print01"></span>VA x 65% = <span id="print01.1"></span>VA</p>
+      <p>Heating Units (4 or more) = <span id="print02"></span>VA x 40% = <span id="print02.1"></span>VA</p>
+      <p>AC Units = <span id="print03"></span>VA x 100% = <span id="print03.1"></span>VA</p>
+      <p><b>Largest Load: <span id="print04"></span>VA</b></p>
+    </div>
+    <div class="print2">
+      <h4>2. GENERAL LOADS: 220.82(B)(1-4)</h4>
+      <p><b>General Lighting: 220.82(B)(1)</b> = <span id="print05"></span>sq ft x 3VA = <span id="print05.1"></span>VA
+      </p>
+      <p><b>Small Appliance and laundry loads: 220.82(B)(2)</b> = 1500VA x <span id="print06"></span> circuits = <span
+          id="print06.1"></span>VA</p>
+      <p><b>AC Units</b> = <span id="print07"></span>VA x 100% = <span id="print07.1"></span></p>
+      <p><b>Special loads: 220.82(B)(3-4)</b></p>
+      <p><span id="print08"></span> = <span id="print08.1"></span>VA</p>
+      <p><span id="print09"></span> = <span id="print09.1"></span>VA</p>
+      <p><span id="print10"></span> = <span id="print10.1"></span>VA</p>
+      <p><span id="print11">X</span> = <span id="print11.1"></span>VA</p>
+      <p><span id="print12"></span> = <span id="print12.1"></span>VA</p>
+      <p><b>Subtotal = <span id="print13"></span>VA</b></p>
+      <h4>Applying Demand Factors: 220.82(B)</h4>
+      <p>First 10,000 VA x 100% = 10,000 VA</p>
+      <p>Remaining (Subtotal - 10,000VA) = <span id="print14"></span>VA x 40% = <span id="print14.1"></span>VA</p>
+      <p><b>Total = <span id="print15"></span>VA</b></p>
+      <p>VA to Amps Conversion = Total VA / 240 V</p>
+      <p><b>Total Usage = <span id="print16"></span> / 240 = <span id="print16.1"></span></b></p>
+      <h3>PV SYSTEM INTERCONNECTION CALCULATION - "120% RULE" NEC 705.12(D)(2)</h3>
+      <p>The Maximum Amperage allowed by NEC into the Main Panel = Main Panel Busbar Rating x 120%</p>
+      <p><span id="print17"></span> x 120% = <span id="print17.1"></span>A</p>
+      <p>The Max Solar Allowance = The Maximum Amperage Allowed - The Main Breaker Rating</p>
+      <p><span id="print19"></span> - <span id="print19.1"></span> = <span id="print19.2"></span>A</p>
+      <p><b>Therefore, the Max PV System Breaker would be <span id="print20">
+
+          </span>A</b></p>
+
+      <button id="printBtn" onclick="window.print()">Print</button>
+
+    </div>
+
+</body>
+
+</html>

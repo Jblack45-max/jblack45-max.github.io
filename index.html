@@ -8,18 +8,26 @@
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/4a5ab584f2.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div class="triangle"></div>
   <form id="wrapper">
-    <section id="totals">
-      <div class="formHeader">
-        <h1>NEC LOAD CALCULATIONS</h1>
+    <section id="leftSide">
+      <div class="headingWrap">
+        <div class="heading">
+          <div class="formHeader">
+            <h1>NEC LOAD CALCULATIONS</h1>
+          </div>
+        </div>
       </div>
-      <div class="totalsBottom">
-        <div class="rotatedText">
-          <h1>Totals</h1>
+      <div id="leftTotals">
+        <div class="totalsHeaders">
+          <h1>TOTALS</h1>
         </div>
         <div class="numbers">
           <div id="solarAllowed"></div>
@@ -28,16 +36,115 @@
           <h3>Amps Used</h3>
           <div id="ampsAvailable"></div>
           <h3>Amps Available</h3>
+          <!-- <div class="printPageBtn">
+            <a href="print.html">Print</a>
+          </div> -->
+        </div>
+      </div>
+      <div id="leftHelp">
+        <div class="leftGeneral">
+          <div class="totalsHeaders">
+            <h1>GENERAL</h1>
+          </div>
+          <div href="" class="mspPhoto"></div>
+          <div class="helpInfo">
+            <p><span>MSP RATING:</span> You’ll find the MSP Rating on the Main Service Panel sticker. This is usually
+              located on the inside of Main Service Panel door or inside the panel on one of the sides. If the sticker
+              is
+              not there or is unreadible, assume it is the same number as the Main Breaker.</p>
+            <p><span>MAIN BREAKER:</span> The Main Breaker is the biggest breaker, usually located at the very top of
+              the
+              panel. It can also be located in the center or bottom of the panel. See image above for referenece.</p>
+            <p><span>HOME SQUARE FOOTAGE:</span> To find this, simply google the address. Most times they will have
+              this
+              informatino on Zillow.com or Realtor.com</p>
+          </div>
+        </div>
+        <div id="leftBreakers">
+          <div class="totalsHeaders">
+            <h1>BREAKERS</h1>
+          </div>
+          <div class="breakerImgs">
+            <div class="breakerText">
+              <div class="singlePole"></div>
+              <h5>Single-Pole</h5>
+            </div>
+            <div class="breakerText">
+              <div class="doublePole"></div>
+              <h5>Double-Pole</h5>
+            </div>
+            <div class="breakerText">
+              <div class="quad"></div>
+              <h5>Quad</h5>
+            </div>
+            <div class="breakerText">
+              <div class="tandem"></div>
+              <h5>Tandem/Twin</h5>
+            </div>
+          </div>
+          <div class="helpInfo">
+            <p><span>SINGLE-POLE:</span> A single pole breaker is one that takes up 1 slot. See pictures above for
+              example.</p>
+            <p><span>DOUBLE-POLE:</span> A double pole breaker is one that takes up 2 slots. See pictures
+              above for example.</p>
+            <p><span>QUAD:</span> A quad breaker is when 2 Double-Pole breakers are combined into 1. In the example
+              above
+              it shows a 20A/50A Quad Breaker. This means we have (1) 20A Double-Pole & (1) 50A Double-Pole Breakers.
+            </p>
+            <p><span>TANDEM/TWIN:</span> A Twin/Tandem breaker is when 2 Single-Pole breakers are combined into 1. In
+              the
+              example above it shows a 20A/20A Twin Breaker. This means we have (2) 20A Single-Pole</p>
+          </div>
+        </div>
+        <div id="leftLoads">
+          <div class="totalsHeaders">
+            <h1>LOADS</h1>
+          </div>
+          <div class="loadsImgs">
+            <div class="breakerText1">
+              <div class="singlePole1"></div>
+              <h5>Small</h5>
+            </div>
+            <div class="breakerText1">
+              <div class="doublePole1"></div>
+              <h5>Small</h5>
+            </div>
+            <div class="breakerText1">
+              <div class="specialLoad"></div>
+              <h5>Special</h5>
+            </div>
+          </div>
+          <div class="helpInfo">
+            <p><span>SMALL LOADS:</span> A small load is any breaker 25A or less.</p>
+            <p><span>SPECIAL LOADS:</span> Any breaker greater than 25A. You will need to fill out a line for each
+              breaker
+              greater than 25A and select whether it is Single or Double-Pole</p>
+          </div>
+        </div>
+        <div id="leftHeat">
+          <div class="totalsHeaders">
+            <h1>HEAT/AC UNITS</h1>
+          </div>
+          <div class="helpInfo">
+            <p><span>HEATER:</span> These are labeled on the MSP Panel. If you have multiple, then you should ONLY use
+              the biggest breaker. If there are no breakers labeled heater or no breakers labeled at all, leave this
+              section blank.
+            </p>
+            <p><span>AC UNITS:</span> These are also labeled on the MSP Panel. If the breakers are not labeled then use
+              the biggest breaker you can find. Make sure you do not include this breaker again in the Specials Loads
+              Section.
+            </p>
+            <p><span>Breaker Labels:</span> Breakers Labels will be located right next to the breakers or on a labels
+              sheet on the Main Service Panel Door.
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <section id="form">
       <div class="generalInfo">
         <div class="headingsWrap">
-          <h3>General Info</h3>
-          <div class="questionMark">
-            <i class="fa-solid fa-question fa-2xs"></i>
-          </div>
+          <h4>General Info</h4>
         </div>
         <input id="input01" type="text" placeholder="MSP rating" title="MSP">
         <input id="input02" type="text" placeholder="Main Breaker Rating">
@@ -45,10 +152,7 @@
       </div>
       <div class="heat">
         <div class="headingsWrap">
-          <h3>Heaters</h3>
-          <div class="questionMark">
-            <i class="fa-solid fa-question fa-2xs"></i>
-          </div>
+          <h4>Heaters</h4>
         </div>
         <select name="list" id="heatListNum" accesskey="target">
           <option value="none">Number of Breakers</option>
@@ -66,10 +170,7 @@
         <option value="two">Double Pole</option>
       </select><br>
       <div class="headingsWrap">
-        <h3>AC Units</h3>
-        <div class="questionMark">
-          <i class="fa-solid fa-question fa-2xs"></i>
-        </div>
+        <h4>AC Units</h4>
       </div>
       <input id="heatInput2" type="text" placeholder="Combined Breaker Size">
       <select name="list" id="heatList2" accesskey="target">
@@ -79,17 +180,11 @@
       </select><br>
 
       <div class="headingsWrap">
-        <h3>Small Loads</h3>
-        <div class="questionMark">
-          <i class="fa-solid fa-question fa-2xs"></i>
-        </div>
+        <h4>Small Loads</h4>
       </div>
       <input id="input10" type="text" placeholder="Number of Small Loads"><br>
       <div class="headingsWrap">
-        <h3>Other Loads</h3>
-        <div class="questionMark">
-          <i class="fa-solid fa-question fa-2xs"></i>
-        </div>
+        <h4>Other Loads</h4>
       </div>
       <input id="otherInput" type="text" placeholder="Breaker Size">
       <select name="list" id="otherList" accesskey="target">
