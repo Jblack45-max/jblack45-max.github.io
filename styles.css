@@ -63,7 +63,8 @@ h1 {
 
 #solarAllowed,
 #ampsUsed,
-#ampsAvailable {
+#ampsAvailable,
+#toBottom {
   padding: 7px 0;
   width: 200px;
   background-color: #2EE59D;
@@ -71,6 +72,11 @@ h1 {
   margin: 20px auto 5px auto;
   border-radius: 20px;
   font-family: 'Bebas Neue', cursive;
+  color: #2c2c2c;
+}
+
+#toBottom a {
+  text-decoration: none;
   color: #2c2c2c;
 }
 
@@ -239,7 +245,7 @@ h1 {
   border-radius: 50%;
 }
 
-
+/* FORM SECTION */
 
 #form {
   width: 50%;
@@ -275,6 +281,49 @@ h1 {
   background-color: #2EE59D;
   color: #fff;
 }
+
+/* FORM SECTION HEADER HOVER INFO */
+.hovertext {
+  position: relative;
+  margin: 20px 0;
+  color: #2c2c2c;
+}
+
+.hovertext h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 250px;
+  background-color: #2c2c2c;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  /* border: 2px solid #2EE59D; */
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.generalInfo input {
+  margin: 10px;
+}
+
+
 
 /* Style for submit and reset button */
 .wrap {
@@ -372,8 +421,8 @@ input {
   right: 0;
   width: 0;
   height: 0;
-  border-bottom: 500px solid #fff;
-  border-left: 800px solid transparent;
+  border-bottom: 30em solid #fff;
+  border-left: 50em solid transparent;
   z-index: -5;
 }
 
@@ -389,4 +438,228 @@ footer a {
 
 footer a:hover {
   color: #2EE59D;
+}
+
+
+/* PRINTING SECTION */
+#printing {
+  display: none;
+  font-family: Consolas;
+}
+
+#calculator {
+  display: block;
+}
+
+.printingContainer {
+  margin: 0 8em;
+  color: #2c2c2c;
+  font-weight: bold;
+}
+
+.printingContainer h4 {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.printingContainer p {
+  font-size: 8px;
+}
+
+.printHeading h3 {
+  text-align: center;
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2em 0 2em 0;
+}
+
+.breakerBox img,
+.mspBox img {
+  width: auto;
+  height: 200px;
+}
+
+.backBtn {
+  position: fixed;
+  top: 2em;
+  left: 3em;
+}
+
+.printBtn {
+  position: fixed;
+  top: 5em;
+  left: 3em;
+}
+
+.backBtn:hover,
+.printBtn:hover {
+  color: #2EE59D;
+  transform: scale(1.5);
+}
+
+#printBtn,
+#imageButton,
+#chooseFile,
+#chooseFile1 {
+  margin: 0 auto 2em auto;
+  width: 8em;
+  height: 3em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#imageButton {
+  width: 14em;
+}
+
+#imageButton:hover {
+  background-color: #2EE59D;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#printBtn:hover {
+  background-color: #2EE59D;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* PRINT INPUTS -- BREAKER LABELS */
+#printNames {
+  border-radius: 0;
+  border: none;
+  height: 2em;
+  width: 10em;
+  font-size: 8px;
+  box-shadow: none;
+}
+
+#boxContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#boxContainer p,
+#boxContainer img {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#chooseFile,
+#chooseFile1 {
+  border-radius: 0;
+  box-shadow: none;
+  width: 20em;
+}
+
+.imgUploads {
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+  margin: 0;
+}
+
+.imgBtn button {
+  margin: 0 auto;
+  width: 5em;
+  height: 1.5em;
+  font-size: 9px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+}
+
+#toBottom {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #wrapper {
+    display: block;
+  }
+
+  #leftSide,
+  #form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .triangle {
+    display: none;
+  }
+
+  .formHeader {
+    padding: .01em 1em;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .formHeader h1 {
+    font-size: 25px;
+  }
+
+  .heading {
+    width: 80%;
+    position: static;
+    text-align: center;
+  }
+
+  .headingWrap {
+    width: 100%;
+    background-color: #2c2c2c;
+    margin: 1em auto;
+    margin-right: 0;
+
+  }
+
+  #leftTotals {
+    margin: -3em auto -3em auto;
+  }
+
+  .breakerImgs,
+  .loadsImgs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .breakerText,
+  .breakerText1 {
+    margin: 0 auto;
+  }
+
+  #wrapper {
+    margin: 0 auto;
+  }
+
+  #toBottom {
+    display: block;
+    background-color: #2c2c2c;
+  }
+
+  #toBottom a {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 2px 4px;
+    border-radius: 5px;
+  }
 }

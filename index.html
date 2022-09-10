@@ -15,222 +15,317 @@
 </head>
 
 <body>
-  <div class="triangle"></div>
-  <form id="wrapper">
-    <section id="leftSide">
-      <div class="headingWrap">
-        <div class="heading">
-          <div class="formHeader">
-            <h1>NEC LOAD CALCULATIONS</h1>
+  <section id="calculator">
+    <div class="triangle"></div>
+    <form id="wrapper">
+      <section id="leftSide">
+        <div class="headingWrap">
+          <div class="heading">
+            <div class="formHeader">
+              <h1>NEC LOAD CALCULATIONS</h1>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="leftTotals">
-        <div class="totalsHeaders">
-          <h1>TOTALS</h1>
-        </div>
-        <div class="numbers">
-          <div id="solarAllowed"></div>
-          <h3>Max Solar Allowance</h3>
-          <div id="ampsUsed"></div>
-          <h3>Amps Used</h3>
-          <div id="ampsAvailable"></div>
-          <h3>Amps Available</h3>
-          <!-- <div class="printPageBtn">
-            <a href="print.html">Print</a>
-          </div> -->
-        </div>
-      </div>
-      <div id="leftHelp">
-        <div class="leftGeneral">
+        <div id="leftTotals">
           <div class="totalsHeaders">
-            <h1>GENERAL</h1>
+            <h1>TOTALS</h1>
           </div>
-          <div href="" class="mspPhoto"></div>
-          <div class="helpInfo">
-            <p><span>MSP RATING:</span> You’ll find the MSP Rating on the Main Service Panel sticker. This is usually
-              located on the inside of Main Service Panel door or inside the panel on one of the sides. If the sticker
-              is
-              not there or is unreadible, assume it is the same number as the Main Breaker.</p>
-            <p><span>MAIN BREAKER:</span> The Main Breaker is the biggest breaker, usually located at the very top of
-              the
-              panel. It can also be located in the center or bottom of the panel. See image above for referenece.</p>
-            <p><span>HOME SQUARE FOOTAGE:</span> To find this, simply google the address. Most times they will have
-              this
-              informatino on Zillow.com or Realtor.com</p>
+          <div class="numbers">
+            <div id="solarAllowed"></div>
+            <h3>Max Solar Allowance</h3>
+            <div id="ampsUsed"></div>
+            <h3>Amps Used</h3>
+            <div id="ampsAvailable"></div>
+            <h3>Amps Available</h3>
+            <div id="toBottom"><a href="#form">Jump To Form</a></div>
           </div>
         </div>
-        <div id="leftBreakers">
-          <div class="totalsHeaders">
-            <h1>BREAKERS</h1>
-          </div>
-          <div class="breakerImgs">
-            <div class="breakerText">
-              <div class="singlePole"></div>
-              <h5>Single-Pole</h5>
+        <div id="leftHelp">
+          <div class="leftGeneral">
+            <div class="totalsHeaders">
+              <h1>GENERAL</h1>
             </div>
-            <div class="breakerText">
-              <div class="doublePole"></div>
-              <h5>Double-Pole</h5>
-            </div>
-            <div class="breakerText">
-              <div class="quad"></div>
-              <h5>Quad</h5>
-            </div>
-            <div class="breakerText">
-              <div class="tandem"></div>
-              <h5>Tandem/Twin</h5>
+            <div href="" class="mspPhoto"></div>
+            <div class="helpInfo">
+              <p><span>MSP RATING:</span> You’ll find the MSP Rating on the Main Service Panel sticker. This is usually
+                located on the inside of Main Service Panel door or inside the panel on one of the sides. If the sticker
+                is
+                not there or is unreadible, assume it is the same number as the Main Breaker.</p>
+              <p><span>MAIN BREAKER:</span> The Main Breaker is the biggest breaker, usually located at the very top of
+                the
+                panel. It can also be located in the center or bottom of the panel. See image above for referenece.</p>
+              <p><span>HOME SQUARE FOOTAGE:</span> To find this, simply google the address. Most times they will have
+                this
+                informatino on Zillow.com or Realtor.com</p>
             </div>
           </div>
-          <div class="helpInfo">
-            <p><span>SINGLE-POLE:</span> A single pole breaker is one that takes up 1 slot. See pictures above for
-              example.</p>
-            <p><span>DOUBLE-POLE:</span> A double pole breaker is one that takes up 2 slots. See pictures
-              above for example.</p>
-            <p><span>QUAD:</span> A quad breaker is when 2 Double-Pole breakers are combined into 1. In the example
-              above
-              it shows a 20A/50A Quad Breaker. This means we have (1) 20A Double-Pole & (1) 50A Double-Pole Breakers.
-            </p>
-            <p><span>TANDEM/TWIN:</span> A Twin/Tandem breaker is when 2 Single-Pole breakers are combined into 1. In
-              the
-              example above it shows a 20A/20A Twin Breaker. This means we have (2) 20A Single-Pole</p>
+          <div id="leftBreakers">
+            <div class="totalsHeaders">
+              <h1>BREAKERS</h1>
+            </div>
+            <div class="breakerImgs">
+              <div class="breakerText">
+                <div class="singlePole"></div>
+                <h5>Single-Pole</h5>
+              </div>
+              <div class="breakerText">
+                <div class="doublePole"></div>
+                <h5>Double-Pole</h5>
+              </div>
+              <div class="breakerText">
+                <div class="quad"></div>
+                <h5>Quad</h5>
+              </div>
+              <div class="breakerText">
+                <div class="tandem"></div>
+                <h5>Tandem/Twin</h5>
+              </div>
+            </div>
+            <div class="helpInfo">
+              <p><span>SINGLE-POLE:</span> A single pole breaker is one that takes up 1 slot. See pictures above for
+                example.</p>
+              <p><span>DOUBLE-POLE:</span> A double pole breaker is one that takes up 2 slots. See pictures
+                above for example.</p>
+              <p><span>QUAD:</span> A quad breaker is when 2 Double-Pole breakers are combined into 1. In the example
+                above
+                it shows a 20A/50A Quad Breaker. This means we have (1) 20A Double-Pole & (1) 50A Double-Pole Breakers.
+              </p>
+              <p><span>TANDEM/TWIN:</span> A Twin/Tandem breaker is when 2 Single-Pole breakers are combined into 1. In
+                the
+                example above it shows a 20A/20A Twin Breaker. This means we have (2) 20A Single-Pole</p>
+            </div>
+          </div>
+          <div id="leftLoads">
+            <div class="totalsHeaders">
+              <h1>LOADS</h1>
+            </div>
+            <div class="loadsImgs">
+              <div class="breakerText1">
+                <div class="singlePole1"></div>
+                <h5>Small</h5>
+              </div>
+              <div class="breakerText1">
+                <div class="doublePole1"></div>
+                <h5>Small</h5>
+              </div>
+              <div class="breakerText1">
+                <div class="specialLoad"></div>
+                <h5>Special</h5>
+              </div>
+            </div>
+            <div class="helpInfo">
+              <p><span>SMALL LOADS:</span> A small load is any breaker 25A or less.</p>
+              <p><span>SPECIAL LOADS:</span> Any breaker greater than 25A. You will need to fill out a line for each
+                breaker
+                greater than 25A and select whether it is Single or Double-Pole</p>
+            </div>
+          </div>
+          <div id="leftHeat">
+            <div class="totalsHeaders">
+              <h1>HEAT/AC UNITS</h1>
+            </div>
+            <div class="helpInfo">
+              <p><span>HEATER:</span> These are labeled on the MSP Panel. If you have multiple, then you should ONLY use
+                the biggest breaker. If there are no breakers labeled heater or no breakers labeled at all, leave this
+                section blank.
+              </p>
+              <p><span>AC UNITS:</span> These are also labeled on the MSP Panel. If the breakers are not labeled then
+                use
+                the biggest breaker you can find. Make sure you do not include this breaker again in the Specials Loads
+                Section.
+              </p>
+              <p><span>Breaker Labels:</span> Breakers Labels will be located right next to the breakers or on a labels
+                sheet on the Main Service Panel Door.
+              </p>
+            </div>
           </div>
         </div>
-        <div id="leftLoads">
-          <div class="totalsHeaders">
-            <h1>LOADS</h1>
+      </section>
+      <section id="form">
+        <div class="generalInfo">
+          <div class="headingsWrap">
+            <span class="hovertext" data-hover="Enter the General Info here!">
+              <h4>GENERAL</h4>
+            </span>
           </div>
-          <div class="loadsImgs">
-            <div class="breakerText1">
-              <div class="singlePole1"></div>
-              <h5>Small</h5>
-            </div>
-            <div class="breakerText1">
-              <div class="doublePole1"></div>
-              <h5>Small</h5>
-            </div>
-            <div class="breakerText1">
-              <div class="specialLoad"></div>
-              <h5>Special</h5>
-            </div>
-          </div>
-          <div class="helpInfo">
-            <p><span>SMALL LOADS:</span> A small load is any breaker 25A or less.</p>
-            <p><span>SPECIAL LOADS:</span> Any breaker greater than 25A. You will need to fill out a line for each
-              breaker
-              greater than 25A and select whether it is Single or Double-Pole</p>
-          </div>
+          <input id="input01" type="text" placeholder="MSP rating" title="MSP">
+          <input id="input02" type="text" placeholder="Main Breaker Rating">
+          <input id="input03" type="text" placeholder="Home Square Footage"><br>
         </div>
-        <div id="leftHeat">
-          <div class="totalsHeaders">
-            <h1>HEAT/AC UNITS</h1>
+        <div class="heat">
+          <div class="headingsWrap">
+            <span class="hovertext" data-hover="Enter ONLY the largest heater breaker! If none, leave blank!">
+              <h4>HEATERS</h4>
+            </span>
           </div>
-          <div class="helpInfo">
-            <p><span>HEATER:</span> These are labeled on the MSP Panel. If you have multiple, then you should ONLY use
-              the biggest breaker. If there are no breakers labeled heater or no breakers labeled at all, leave this
-              section blank.
-            </p>
-            <p><span>AC UNITS:</span> These are also labeled on the MSP Panel. If the breakers are not labeled then use
-              the biggest breaker you can find. Make sure you do not include this breaker again in the Specials Loads
-              Section.
-            </p>
-            <p><span>Breaker Labels:</span> Breakers Labels will be located right next to the breakers or on a labels
-              sheet on the Main Service Panel Door.
-            </p>
-          </div>
+          <select name="list" id="heatListNum" accesskey="target">
+            <option value="none">Number of Breakers</option>
+            <option value="one">3 Or Less</option>
+            <option value="two">More than 4</option>
+            <option value="none">None</option>
+          </select>
         </div>
-      </div>
-    </section>
-    <section id="form">
-      <div class="generalInfo">
+
+
+        <input id="heatInput1" type="text" placeholder="Combined Breaker Size">
+        <select name="list" id="heatList1" accesskey="target">
+          <option value="none">Pick an option</option>
+          <option value="one">Single Pole</option>
+          <option value="two">Double Pole</option>
+        </select><br>
         <div class="headingsWrap">
-          <h4>General Info</h4>
+          <span class="hovertext"
+            data-hover="Enter ONLY the largest AC breaker! If you can't find one, enter the largest breaker you can find! DO NOT re-enter this breaker in the Special Loads Section! ">
+            <h4>AC UNITS</h4>
+          </span>
         </div>
-        <input id="input01" type="text" placeholder="MSP rating" title="MSP">
-        <input id="input02" type="text" placeholder="Main Breaker Rating">
-        <input id="input03" type="text" placeholder="Home Square Footage"><br>
-      </div>
-      <div class="heat">
+        <input id="heatInput2" type="text" placeholder="Combined Breaker Size">
+        <select name="list" id="heatList2" accesskey="target">
+          <option value="none">Pick an option</option>
+          <option value="one">Single Pole</option>
+          <option value="two">Double Pole</option>
+        </select><br>
+
         <div class="headingsWrap">
-          <h4>Heaters</h4>
+          <span class="hovertext"
+            data-hover="Count the number of breakers that are 25A or less and enter the total here!">
+            <h4>SMALL LOADS</h4>
+          </span>
         </div>
-        <select name="list" id="heatListNum" accesskey="target">
-          <option value="none">Number of Breakers</option>
-          <option value="one">3 Or Less</option>
-          <option value="two">More than 4</option>
-          <option value="none">None</option>
+        <input id="input10" type="text" placeholder="Number of Small Loads"><br>
+        <div class="headingsWrap">
+          <span class="hovertext"
+            data-hover="Enter every breaker that is larger than 25A. DO NOT re-enter any breakers you used in the Heater & AC Units section!">
+            <h4>SPECIAL LOADS</h4>
+          </span>
+        </div>
+        <input id="otherInput" type="text" placeholder="Breaker Size">
+        <select name="list" id="otherList" accesskey="target">
+          <option value="none">Pick an option</option>
+          <option value="one">Single Pole</option>
+          <option value="two">Double Pole</option>
+        </select><br>
+
+        <input id="otherInput2" type="text" placeholder="Breaker Size">
+        <select name="list" id="otherList2" accesskey="target">
+          <option value="none">Pick an option</option>
+          <option value="one">Single Pole</option>
+          <option value="two">Double Pole</option>
+        </select><br>
+
+        <input id="otherInput3" type="text" placeholder="Breaker Size">
+        <select name="list" id="otherList3" accesskey="target">
+          <option value="none">Pick an option</option>
+          <option value="one">Single Pole</option>
+          <option value="two">Double Pole</option>
+        </select><br>
+
+        <input id="otherInput4" type="text" placeholder="Breaker Size">
+        <select name="list" id="otherList4" accesskey="target">
+          <option value="none">Pick an option</option>
+          <option value="one">Single Pole</option>
+          <option value="two">Double Pole</option>
+        </select><br>
+
+        <input id="otherInput5" type="text" placeholder="Breaker Size">
+        <select name="list" id="otherList5" accesskey="target">
+          <option value="none">Pick an option</option>
+          <option value="one">Single Pole</option>
+          <option value="two">Double Pole</option>
         </select>
+        <div class="wrap">
+          <input class="button" type=button value="Submit" onclick="submitClicked()" />
+          <input class="button" type=button value="Reset" onclick="window.location.reload();" />
+          <input class="button" type=button value="Print" onclick="printClicked();" />
+        </div>
+        <footer>
+          <h6>Designed by <i><a href="https://blackburndesignstudio.com/">BlackburnDesignStudio</a></i></h6>
+        </footer>
+      </section>
+    </form>
+  </section>
+  <!-- PRINTING SECTION -->
+  <section id="printing">
+    <div class="backBtn" onclick="backClicked();"><i class="fa-solid fa-chevron-left"></i></div>
+    <div class="printBtn" onclick="window.print()"><i class="fa-solid fa-print"></i></div>
+    <div class="printingContainer">
+      <div class="printHeading">
+        <h3>NEC LOADS - OPTIONAL CALCULATION</h3>
       </div>
-
-
-      <input id="heatInput1" type="text" placeholder="Combined Breaker Size">
-      <select name="list" id="heatList1" accesskey="target">
-        <option value="none">Pick an option</option>
-        <option value="one">Single Pole</option>
-        <option value="two">Double Pole</option>
-      </select><br>
-      <div class="headingsWrap">
-        <h4>AC Units</h4>
+      <div class="print1">
+        <h4>1. HEATING or AC: 220.82(C)(1-6)</h4>
+        <p>Heating Units (3 or less) = <span id="print01"></span> VA x 65% = <span id="print01.1"></span> VA</p>
+        <p>Heating Units (4 or more) = <span id="print02"></span> VA x 40% = <span id="print02.1"></span> VA</p>
+        <p>AC Units = <span id="print03"></span> VA x 100% = <span id="print03.1"></span> VA</p>
+        <p><b>Largest Load: <span id="print04"></span> VA</b></p>
       </div>
-      <input id="heatInput2" type="text" placeholder="Combined Breaker Size">
-      <select name="list" id="heatList2" accesskey="target">
-        <option value="none">Pick an option</option>
-        <option value="one">Single Pole</option>
-        <option value="two">Double Pole</option>
-      </select><br>
+      <div class="print2">
+        <h4>2. GENERAL LOADS: 220.82(B)(1-4)</h4>
+        <p><b>General Lighting: 220.82(B)(1)</b> = <span id="print05"></span>sq ft x 3 VA = <span id="print05.1"></span>
+          VA
+        </p>
+        <p><b>Small Appliance and laundry loads: 220.82(B)(2)</b> = 1500 VA x <span id="print06"></span> circuits =
+          <span id="print06.1"></span> VA
+        </p>
 
-      <div class="headingsWrap">
-        <h4>Small Loads</h4>
+        <p><b>Special loads: 220.82(B)(3-4)</b></p>
+        <p><input id="printNames" type="text" placeholder="---breaker label---"> = <span id="print08.1"></span> VA
+        </p>
+        <p><input id="printNames" type="text" placeholder="---breaker label---"> = <span id="print09.1"></span> VA</p>
+        <p><input id="printNames" type="text" placeholder="---breaker label---"> = <span id="print10.1"></span> VA</p>
+        <p><input id="printNames" type="text" placeholder="---breaker label---"> = <span id="print11.1"></span> VA</p>
+        <p><input id="printNames" type="text" placeholder="---breaker label---"> = <span id="print12.1"></span> VA</p>
+        <p><b>Subtotal = <span id="print13"></span> VA</b></p>
+        <h4>Applying Demand Factors: 220.82(B)</h4>
+        <p>First 10,000 VA x 100% = 10,000 VA</p>
+        <p>Remaining (Subtotal - 10,000VA) = <span id="print14"></span> VA x 40% = <span id="print14.1"></span> VA</p>
+        <p><b>Total = <span id="print15"></span> VA</b></p>
+        <p>VA to Amps Conversion = Total VA / 240 V</p>
+        <p><b>Total Usage = <span id="print16"></span> / 240 = <span id="print16.1"></span>A</b></p>
+        <h4>PV SYSTEM INTERCONNECTION CALCULATION - "120% RULE" NEC 705.12(D)(2)</h4>
+        <p>The Maximum Amperage allowed by
+          NEC into the Main Panel = Main Panel Busbar Rating x 120%</p>
+        <p><span id="print17"></span> x 120% = <span id="print17.1"></span>A</p>
+        <p>The Max Solar Allowance = The Maximum Amperage Allowed - The Main Breaker Rating</p>
+        <p><span id="print18"></span> - <span id="print18.1"></span> = <span id="print18.2"></span>A</p>
+        <p><b>Therefore, the Max PV System Breaker would be <span id="print19"></span>A</b></p>
+        <div class="imgUploads">
+          <div id="boxContainer">
+            <div class="panelImg">
+              <p>Main Breaker</p>
+              <img id="image" src="" width="auto" height="250px">
+            </div>
+            <div class="imgBtn">
+              <input type="file" id="chooseFile" /><br>
+              <button id="imageButton" onclick="setImage()">Show Image</button>
+            </div>
+          </div>
+          <div id="boxContainer">
+            <div class="panelImg">
+              <p>Main Service Panel</p>
+              <img id="image1" src="" width="auto" height="250px">
+            </div>
+            <div class="imgBtn">
+              <input type="file" id="chooseFile1" /><br>
+              <button id="imageButton" onclick="setImage1()">Show Image</button>
+            </div>
+          </div>
+        </div>
+        <style>
+          @media print {
+
+            .imgBtn,
+            .printBtn,
+            .backBtn {
+              visibility: hidden;
+            }
+
+          }
+        </style>
+        <script id="print.js"></script>
+
       </div>
-      <input id="input10" type="text" placeholder="Number of Small Loads"><br>
-      <div class="headingsWrap">
-        <h4>Other Loads</h4>
-      </div>
-      <input id="otherInput" type="text" placeholder="Breaker Size">
-      <select name="list" id="otherList" accesskey="target">
-        <option value="none">Pick an option</option>
-        <option value="one">Single Pole</option>
-        <option value="two">Double Pole</option>
-      </select><br>
-
-      <input id="otherInput2" type="text" placeholder="Breaker Size">
-      <select name="list" id="otherList2" accesskey="target">
-        <option value="none">Pick an option</option>
-        <option value="one">Single Pole</option>
-        <option value="two">Double Pole</option>
-      </select><br>
-
-      <input id="otherInput3" type="text" placeholder="Breaker Size">
-      <select name="list" id="otherList3" accesskey="target">
-        <option value="none">Pick an option</option>
-        <option value="one">Single Pole</option>
-        <option value="two">Double Pole</option>
-      </select><br>
-
-      <input id="otherInput4" type="text" placeholder="Breaker Size">
-      <select name="list" id="otherList4" accesskey="target">
-        <option value="none">Pick an option</option>
-        <option value="one">Single Pole</option>
-        <option value="two">Double Pole</option>
-      </select><br>
-
-      <input id="otherInput5" type="text" placeholder="Breaker Size">
-      <select name="list" id="otherList5" accesskey="target">
-        <option value="none">Pick an option</option>
-        <option value="one">Single Pole</option>
-        <option value="two">Double Pole</option>
-      </select>
-      <div class="wrap">
-        <input class="button" type=button value="Submit" onclick="submitClicked()" />
-        <input class="button" type=button value="Reset" onclick="window.location.reload();" />
-      </div>
-
-    </section>
-  </form>
-
-  <footer>
-    <h6>Designed by <i><a href="https://blackburndesignstudio.com/">BlackburnDesignStudio</a></i></h6>
-  </footer>
+  </section>
   <script src="main.js"></script>
 
 </body>
